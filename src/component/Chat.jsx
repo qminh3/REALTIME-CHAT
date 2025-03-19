@@ -56,14 +56,14 @@ const Chat = ({ room, setCurrentRoom }) => {
 
   let scrollRef = useRef(null);
   return (
-    <div className="mt-4 w-full border-2 bg-slate-200 shaow-xl rounded-xl p-4 h-[80%] flex flex-col relative">
+    <div className="mt-10 w-full border-2 bg-[#f4e1db] shadow-xl rounded-xl p-5 h-[90%] flex flex-col relative">
       <div
         onClick={() => setCurrentRoom("")}
-        className="absolute left-1 top-1 p-3 text-white bg-red-500 rounded-xl text-xm z-[30]"
+        className="absolute left-2 top-2 p-7 text-white bg-[#ea4040] rounded-xl text-2xl z-[30]"
       >
-        Exit
+        Exit room
       </div>
-      <div className="w-full overflow-auto h-[90%] pt-10" ref={scrollRef}>
+      <div className="w-full overflow-auto h-[90%] pt-20 mt-3" ref={scrollRef}>
         {messages?.map((curr) => {
           return (
             <Message
@@ -77,7 +77,7 @@ const Chat = ({ room, setCurrentRoom }) => {
           );
         })}
       </div>
-      <div className="w-full rounded-lg text-sm flex justify-between absolute bottom-2 left-0 px-2 gap-2">
+      <div className="w-full rounded-xl text-sm flex justify-between absolute bottom-3 left-1 right-0 px-6 gap-4">
         <input
           type="text"
           onKeyUp={(e) => {

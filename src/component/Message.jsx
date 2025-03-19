@@ -9,7 +9,7 @@ const Message = ({
 }) => {
   return (
     <div
-      className={`bg-transparent w-full flex text-white gap-2 text-sm mb-2 ${
+      className={`bg-transparent w-full flex text-white gap-2 text-sm mb-2 mt-4 ${
         isOfUser ? "justify-end" : "justify-start"
       }`}
     >

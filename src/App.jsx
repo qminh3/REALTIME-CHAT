@@ -37,14 +37,14 @@ function App() {
         {user ? (
           <button
             onClick={signOut}
-            className="border-black border-2 rounded-xl font-bold p-4 text-center w-[13rem]"
+            className="border-gray border-2 rounded-xl font-bold p-4 text-center w-[13rem] cursor-pointer bg-[#d59d80]"
           >
             SignOut
           </button>
         ) : (
           <button
             onClick={googleSignIn}
-            className="border-black border-2 rounded-xl font-bold p-4 text-center w-[13rem]"
+            className="border-black border-2 rounded-xl font-bold p-4 text-center w-[13rem] cursor-pointer bg-[#d59d80]"
           >
             Google Sign in
           </button>
